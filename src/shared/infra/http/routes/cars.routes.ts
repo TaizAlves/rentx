@@ -21,7 +21,6 @@ const uploadCarImagesController = new UploadCarImageController();
 
 const upload = multer(uploadConfig.upload("./tmp/cars"));
 
-
 carsRoutes.post(
   "/",
   ensureAutenticated,
