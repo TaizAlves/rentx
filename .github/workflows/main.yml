@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          source: "., !node_modules"
+          source: "., !node_modules, !ormconfig.json, !docker-compose.yml"
           target: "~/app/rentx"
          
       - name: Update API
